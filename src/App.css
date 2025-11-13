@@ -65,6 +65,7 @@
 
 .cards-parent{
   display: flex;
+  
   flex-direction: row;
   /* justify-content: space-between; */
   align-items: flex-start;
@@ -72,16 +73,11 @@
   background-image: linear-gradient(to right, #1e1e2f, #00d4ff)
 }
 
+
 .card{
-  margin: 5%;
+  margin: 3%;
 }
 
-.card-img-custom {
-  height: 280px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 20px;
-}
 
 #home-root{
   display: flex;

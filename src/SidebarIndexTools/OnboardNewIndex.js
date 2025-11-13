@@ -90,22 +90,37 @@ export default function OnboardNewIndex2() {
       <div
         style={{
           display: "flex",
-          gap: "200px",
+          gap: "120px",
           marginBottom: "50px",
-          marginLeft: "100px",
-          marginRight: "200px",
+          marginLeft: "70px",
+          marginRight: "50px",
           marginTop: "20px",
           alignItems: "center",
-          
+
         }}
       >
         {/* Pie Chart */}
-        <div style={{ display: "flex", gap: "60px", alignItems: "center"}}>
+        <div style={{ display: "flex", gap: "60px", alignItems: "center" }}>
           {/* Pie Chart */}
           <div style={{ width: "120px", textAlign: "center" }}>
             <Pie data={data} options={options} />
             <div style={{ textAlign: "center", marginTop: "10px", fontWeight: "bold" }}>
-            
+
+            </div>
+          </div>
+
+          {/* Bar Chart on Right */}
+          <div style={{ width: "260px" }}>
+            <Bar data={data_stackbar} options={options_stackbar} />
+          </div>
+        </div>
+
+        <div style={{ display: "flex", gap: "60px", alignItems: "center" }}>
+          {/* Pie Chart */}
+          <div style={{ width: "120px", textAlign: "center" }}>
+            <Pie data={data} options={options} />
+            <div style={{ textAlign: "center", marginTop: "10px", fontWeight: "bold" }}>
+
             </div>
           </div>
 
@@ -117,11 +132,9 @@ export default function OnboardNewIndex2() {
 
 
 
-    
 
 
-        {/* Text Area 2 */}
-        <textarea placeholder="Text Area 2" rows="4" className="form-control"  />
+
 
 
       </div>

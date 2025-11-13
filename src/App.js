@@ -2,8 +2,10 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
 import { useState } from "react";
 import Navbar from "./components/Navbar";
-import Cards from "./components/Cards";
 import Slides from "./components/Slides";
+import Card1 from "./components/Card1";
+import Card2 from "./components/Card2";
+import Card3 from "./components/Card3";
 import MediaCoverage from "./components/MediaCoverage";
 import customImg from "./components/images/custom-filter.webp";
 import preBuilt from "./components/images/pre-built.webp";
@@ -33,14 +35,15 @@ function App() {
             <Slides />
           </div>
 
-          <div
+         <div
             className="d-flex flex-row justify-content-evenly"
             style={{
               marginTop: "-150px",
             }}
           >
-            <Cards title="Pre-built Screen" image={preBuilt} />
-            <Cards title="Create custom filter" image={customImg} />
+            <Card1  />
+            <Card3/>
+            <Card2 />
           </div>
 
           <MediaCoverage setLink={setLink} setPage={setPage} />
