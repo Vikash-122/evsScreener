@@ -4,10 +4,6 @@
   font-family: Arial, sans-serif;
 }
 
-.select, input[type="text"] {
-  padding: 5px;
-  border: 1px solid #000;
-}
 
 .btn {
     padding: 4px 8px;
@@ -35,10 +31,10 @@
     font-size: 20px;
     width: 290px;
     margin-top: 10px;
-}
-
-.backtest-grid {
-  display: flex;
+  }
+  
+  .backtest-grid {
+    display: flex;
   flex-direction: column;
   gap: 10px;
 }
@@ -54,14 +50,15 @@
   font-size: 14px;
 }
 
-.row input[type="date"],
-.row input[type="text"] {
-  padding: 4px 6px;
+input[type="date"],
+input[type="text"] {
+  padding: 2px 4px;
   border: 1px solid #000;
   border-radius: 2px;
   font-size: 14px;
+  background-color: white;
+  color: black;
 }
-
 .generate-btn {
   text-align: center;
   margin-top: 15px;
@@ -101,7 +98,6 @@
 
 .schedule-container {
   background: #fff;
-  color: #4b0082;
   padding: 20px;
   border-radius: 8px;
   font-family: "Segoe UI", sans-serif;
@@ -137,7 +133,7 @@ label {
   background-color: #fff;
   color: #333;
   padding: 20px;
-  max-width: 800px;
+  max-width: 1000px;
 }
 
 /* Radio Button Row */
@@ -150,7 +146,7 @@ label {
 
 .radio-box {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 4px 6px;
   border: 2px solid #a855f7; /* Purple border */
   border-radius: 6px;
   cursor: pointer;
@@ -174,7 +170,7 @@ label {
   border: 1px solid #ddd;
   border-radius: 6px;
   margin-bottom: 10px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .accordion-title {
@@ -201,4 +197,63 @@ label {
 .arrow {
   font-size: 14px;
   color: #a855f7;
+}
+/* Container */
+.custom__control {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  min-height: 30px;
+  box-shadow: none;
+  transition: border-color 0.2s ease;
+}
+
+.custom__control:hover {
+  border-color: #aaa;
+}
+
+/* Value Container */
+.custom__value-container {
+  padding: 0 4px;
+  font-size: 14px;
+}
+
+/* Input */
+.custom__input {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove Indicator Separator */
+.custom__indicator-separator {
+  display: none;
+}
+
+/* Dropdown Indicator */
+.custom__dropdown-indicator {
+  padding: 2px;
+  color: #666;
+}
+
+/* Menu */
+.custom__menu {
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 4px;
+}
+
+/* Option */
+.custom__option {
+  padding: 4px 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.custom__option--is-focused {
+  background-color: #f5f5f5;
+}
+
+.custom__option--is-selected {
+  background-color: #eaeaea;
+  font-weight: 500;
 }

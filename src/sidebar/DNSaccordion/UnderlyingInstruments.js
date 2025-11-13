@@ -1,6 +1,5 @@
 import PopUp from '../PopUp';
 import ExcelTable from '../ExcelTable';
-
 const sampleData = [
     {
       ISIN: "",
@@ -46,11 +45,12 @@ const sampleData = [
 
 export default function UnderlyingInstruments(){
     return(
-        <div className="row">
-           <h4>Underlying Instrument</h4>
-           <PopUp></PopUp>
+        <div className="section5">
+          <div style={{display: "flex", flexDirection: "row", justifyContent: "end", paddingBottom: "5px"}}>
+           <PopUp title="Ticker Lookup"></PopUp>
+          </div>
          <div style={{ width: "100%" }}>
-           <div style={{ width: "600px", height: "auto", margin: "10px 50px" }}>
+           <div style={{ width: "100%", height: "auto"}}>
              <ExcelTable data={sampleData} />
            </div>
          </div>

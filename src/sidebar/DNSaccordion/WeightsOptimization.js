@@ -13,12 +13,12 @@ export default function WeightsOptimization(){
         <div className="form-section">
           <div className="form-row">
             <label>Weights</label>
-            <Select options={options} />
+            <Select options={options} classNamePrefix={'custom'}/>
           </div>
 
           <div className="form-row">
             <label>Optimization Tech</label>
-            <Select options={options} />
+            <Select options={options} classNamePrefix={'custom'}/>
           </div>
     </div>
     </div>

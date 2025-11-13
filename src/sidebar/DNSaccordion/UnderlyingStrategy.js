@@ -1,6 +1,5 @@
 import Select from 'react-select'
 
-
 export default function UnderlyingStrategy() {
     const options = [
   { value: "option1", label: "Option 1" },
@@ -14,18 +13,20 @@ export default function UnderlyingStrategy() {
         <div className="form-section">
           <div className="form-row">
             <label>Select Underlying Strategy</label>
-            <Select options={options} />
+            <Select options={options} classNamePrefix={'custom'}/>
           </div>
 
           <div className="form-row">
             <label>Sub Category</label>
-            <Select options={options} />
+            <Select options={options} classNamePrefix={'custom'}/>
           </div>
           <div className="form-row">
             <label>Calc holiday calender</label>
+            <input type="date" />
           </div>
           <div className="form-row">
             <label>Trading holiday calender</label>
+            <input type="date" />
           </div>
     </div>
     </div>

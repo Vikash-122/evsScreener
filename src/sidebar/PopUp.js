@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
+function App({title}) {
   const [show, setShow] = useState(false);
 
   const handleShow = () => setShow(true);
   const handleClose = () => setShow(false);
 
   return (
-    <div className="text-center" style={{width: "380px"}}>
+    <div className="text-center" style={{width: "180px"}}>
       <button
         className="btn"
         style={{
@@ -19,7 +19,7 @@ function App() {
         }}
         onClick={handleShow}
       >
-        Ticker Lookup
+        {title}
       </button>
 
       {show && (

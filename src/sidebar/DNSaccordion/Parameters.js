@@ -15,8 +15,7 @@ import ExcelTransposeTable from '../ExcelTransposeTable';
 
 export default function Parameters(){
     return (
-              <div className="section5">
-        <h4>Parameters</h4>
+      <div className="section5">
         <ExcelTransposeTable data={sampleTransData} />
         <button className="btn" style={{ width: "150px" }}>
           Edit and Update

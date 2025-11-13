@@ -11,7 +11,8 @@ const sections = [
   { title: "Underlying Instruments", component: "UnderlyingInstruments" },
   { title: "Parameters", component: "Parameters" },
   { title: "Weights Optimization", component: "WeightsOptimization" },
-  { title: "Backtest Parameters", component: "BacktestParameters" }
+  { title: "Backtest Parameters", component: "BacktestParameters" },
+  { title: "Data Sufficiency Check", component: "DataSufficiencyCheck" },
 ];
 
 export default function CustomComponent() {
