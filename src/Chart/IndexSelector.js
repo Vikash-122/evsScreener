@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
-export default function IndexSelector(){
-  const [selectedIndex, setSelectedIndex] = useState("tech50");
+export default function IndexSelector({selectedIndex,setSelectedIndex}){
 
   const handleChange = (e) => {
     setSelectedIndex(e.target.value);
@@ -11,10 +10,11 @@ export default function IndexSelector(){
   return (
     <div className="index-selector">
       <select value={selectedIndex} onChange={handleChange}>
-        <option value="tech50">Evalueserve Tech Index 50</option>
-        <option value="finance100">Evalueserve Finance Index 100</option>
-        <option value="healthcare30">Evalueserve Healthcare Index 30</option>
-        <option value="energy20">Evalueserve Energy Index 20</option>
+        <option value="Index 1">Evalueserve US Consumer Focus Index</option>
+        <option value="Index 2">Evalueserve Global AI Economy Index</option>
+        <option value="Index 3">Evalueserve Electry Mobility Select Index</option>
+        <option value="Index 4">Evalueserve Green technology Index</option>
+        <option value="Index 5">Evalueserve Cyber Security Index</option>
       </select>
     </div>
   );

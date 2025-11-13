@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Graph from './Graph';
 import download_image from "../components/images/download.png"
 import IndexSelector from './IndexSelector';
 
 function Chart() {
+
+  const [selectedIndex,setSelectedIndex]=useState("Index 1");
   return (
     <div
       style={{
@@ -40,7 +42,7 @@ function Chart() {
           }}
         >
           
-          <IndexSelector></IndexSelector>
+          <IndexSelector selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex}/>
         </h2>
         <p style={{width: "150%"}}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta maxime possimus praesentium aperiam quam suscipit voluptates pariatur at libero perferendis?
@@ -117,7 +119,7 @@ function Chart() {
           marginLeft: "150px",
         }}
       >
-        <Graph />
+        <Graph selectedIndex={selectedIndex}/>
       </div>
     </div>
   );
