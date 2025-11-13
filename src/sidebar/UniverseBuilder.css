@@ -1,0 +1,128 @@
+/* General Layout */
+.universe-container {
+  background-image: linear-gradient(to right, #1e1e2f, #1dabc7);
+  color: #fff;
+  min-height: 100vh;
+  width: 100%;
+  padding: 30px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Card Styling */
+.uv-card {
+  background-color: #483a3a;
+  opacity: 0.7;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #aedfd5;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Form Elements */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+input,
+select {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: #2a2a2a;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+input[type="file"] {
+  background: none;
+  padding: 5px;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #4a90e2;
+}
+
+/* Buttons */
+.primary-btn,
+.secondary-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.primary-btn {
+  background-color: #4a90e2;
+  color: #fff;
+}
+
+.primary-btn:hover {
+  background-color: #357ab8;
+}
+
+.secondary-btn {
+  background-color: #34c759;
+  color: #fff;
+}
+
+.secondary-btn:hover {
+  background-color: #28a745;
+}
+
+/* Upload Box */
+.upload-box {
+  border: 2px dashed #555;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #bbb;
+}
+
+/* Radio Buttons */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radio-group input {
+  margin-right: 8px;
+}

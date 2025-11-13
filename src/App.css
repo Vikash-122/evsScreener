@@ -1,0 +1,247 @@
+.App {
+  text-align: center;
+}
+
+.media-card:hover{
+  cursor: pointer;
+  color: #0078d4;
+}
+
+#nav-title{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 20px;
+}
+
+.index-selector select {
+  font-size: 1.2rem;       /* Matches heading size */
+  padding: 1px 3px;
+  border: 2px solid #5a2d82; /* Theme color */
+  border-radius: 6px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  appearance: none;        /* Removes default browser styling */
+  width: 100%;
+}
+
+.index-selector {
+  position: relative;
+  width: 160%;
+}
+
+/* Custom dropdown arrow */
+.index-selector::after {
+  content: "▼";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.7rem;
+  color: #5a2d82;
+  pointer-events: none;
+}
+
+.home-data{
+  border: 3px solid #5a2d82;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 3px 30px;
+  background-color: #fff;
+  margin: 20px 4px;
+  font-size: 2rem;
+}
+
+.universe-root{
+  background-image: linear-gradient(to right, #1e1e2f, #1d7586);
+  width: 100%
+}
+
+.uv-selection1{
+  width: 60%;
+  margin: auto;
+}
+
+.cards-parent{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: flex-start;
+  width: 100%;
+  background-image: linear-gradient(to right, #1e1e2f, #00d4ff)
+}
+
+.card{
+  margin: 5%;
+}
+
+.card-img-custom {
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+#home-root{
+  display: flex;
+  flex-direction: row;
+}
+
+.Sidebar {
+  width: 220px;
+  background-color: #2F4050;
+  overflow: hidden;
+  background-color: #29293e;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  height: 250vh;
+}
+
+.Sidebar-list .row{
+  display: flex;
+  flex-direction: row;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Sidebar list */
+.Sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* Each item wrapper */
+.side-item {
+    margin-bottom: 10px;
+}
+
+/* Common styles for all li */
+.Sidebar-list li {
+    display: flex;
+    padding: 12px 15px;
+    border-radius: 6px;
+    /* transition: all 0.3s ease; */
+}
+
+/* -------------------------
+   Styles for sidebar-tab (clickable)
+   -------------------------- */
+   .sidebar-tab {
+      font-size: 0.9rem;
+     cursor: pointer;
+     background-color: #2a2a3d;
+     /* content: "➔"; */
+}
+
+.sidebar-tab:hover {
+    background-color: #3a3a50;
+    color: #00d4ff;
+    /* transform: translateX(3px); */
+}
+
+/* Add an icon on hover */
+.sidebar-tab:hover::after {
+    /* content: "➔"; */
+    margin-left: 3px;
+    color: #00d4ff;
+    font-size: 14px;
+}
+
+/* -------------------------
+   Styles for sidebar-label (non-clickable)
+-------------------------- */
+.sidebar-label {
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    font-weight: bold;
+    cursor: default;
+}
+
+.slides{
+  height: 450px;
+}
+.slideshow{
+  height: 100%;
+}
+.slide-img{
+  height: 450px;
+  width: 100%;
+}
+.media-page{
+  height: auto;
+  padding-bottom: 2%;
+  width: 100%;
+  background-color: #39042e;
+}
+.empty-page{
+  padding-top: 6%;
+  padding-bottom: 3%;
+  /* height: 30vh; */
+  width: 100%;
+}
+#screener-link {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0078d4; /* Primary color */
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#screener-link:hover {
+    transform: translateY(-4px);
+    background-color: green;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.indices-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+padding-top: 10px;
+padding-bottom: 60px;
+  text-align: center;
+}
+
+/* Premium Gradient Heading */
+.title {
+  font-size: 50px;
+  margin-bottom: 0px;
+  color: rgb(55, 18, 100);
+  letter-spacing: 1.5px;
+}
+
+/* Premium subtext */
+.subtitle {
+  margin-top: 10px;
+  font-size: 20px;
+  color: black;
+  max-width: 80%;
+  
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}

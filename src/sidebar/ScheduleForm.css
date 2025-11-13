@@ -1,0 +1,99 @@
+.schedule-container {
+  background: #fff;
+  color: #4b0082;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: "Segoe UI", sans-serif;
+  width: 100%;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  gap: 30px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 210px 240px;
+  align-items: center;
+  gap: 10px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+}
+
+.react-select__control {
+  min-height: 32px;
+}
+
+.multi-select .react-select__multi-value {
+  max-width: 120px;
+  overflow-x: auto;
+}
+
+.schedule-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.adhoc-btn, .create-btn {
+  background: #4b0082;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.adhoc-btn:hover, .create-btn:hover {
+  background: #6a0dad;
+}
+/* DatePicker input box */
+.react-datepicker-wrapper input {
+  background-color: #fff !important; /* White background */
+  border: 1px solid #ccc;            /* Light border */
+  border-radius: 4px;
+  padding: 6px 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* DatePicker popup calendar */
+.react-datepicker {
+  background-color: #fff !important; /* White popup */
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Calendar header */
+.react-datepicker__header {
+  background-color: #fff !important;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Selected day */
+.react-datepicker__day--selected {
+  background-color: #4b0082 !important; /* Purple theme */
+  color: #fff !important;
+}
+
+/* Hover effect */
+.react-datepicker__day:hover {
+  background-color: #e6e6fa; /* Light purple hover */
+}

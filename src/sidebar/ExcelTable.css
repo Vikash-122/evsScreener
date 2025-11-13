@@ -1,0 +1,50 @@
+.excel-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.excel-table th,
+.excel-table td {
+  padding: 6px 16px;
+  text-align: center;
+}
+
+.excel-table th {
+  background-color: #5a2d82; /* Matches purple theme */
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.excel-table td {
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 13px;
+  color: #333;
+}
+
+.excel-table tr:nth-child(even) td:not(.first-column) {
+  background-color: #f9f6fc; /* Light purple tint */
+}
+
+.excel-table tr:hover td {
+  background-color: #ede7f6; /* Hover effect */
+  cursor: pointer;
+}
+
+.excel-table tr:last-child td {
+  border-bottom: none;
+}
+/* Existing styles remain same */
+
+.transpose-table .first-column {
+  background-color: #5a2d82; /* Purple */
+  color: #fff; /* White text */
+  font-weight: 600;
+  text-transform: capitalize;
+}
