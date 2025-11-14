@@ -1,7 +1,11 @@
 .container {
   width: 90%;
-  margin: 20px auto;
-  font-family: Arial, sans-serif;
+  margin: 40px auto;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    max-width: 1000px;
 }
 
 
@@ -19,20 +23,13 @@
 }
 
 .section5{
-  padding: 20px 60px;
+  padding: 5px 60px;
   display: flex;
   flex-direction: column;
   align-self: center;
   justify-content: center;
-  align-items: start;
-  row-gap: 20px;
+  row-gap: 10px;
 }
-.section5 h4{
-    font-size: 20px;
-    width: 290px;
-    margin-top: 10px;
-  }
-  
   .backtest-grid {
     display: flex;
   flex-direction: column;
@@ -58,6 +55,7 @@ input[type="text"] {
   font-size: 14px;
   background-color: white;
   color: black;
+  width: 200px;
 }
 .generate-btn {
   text-align: center;
@@ -128,20 +126,13 @@ label {
   font-weight: 500;
 }
 
-.container {
-  font-family: "Segoe UI", sans-serif;
-  background-color: #fff;
-  color: #333;
-  padding: 20px;
-  max-width: 1000px;
-}
 
 /* Radio Button Row */
 .radio-row {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .radio-box {
@@ -198,62 +189,23 @@ label {
   font-size: 14px;
   color: #a855f7;
 }
-/* Container */
-.custom__control {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  min-height: 30px;
-  box-shadow: none;
-  transition: border-color 0.2s ease;
-}
-
-.custom__control:hover {
-  border-color: #aaa;
-}
-
-/* Value Container */
-.custom__value-container {
-  padding: 0 4px;
+select.custom-dropdown {
+  padding: 2px 4px;
+  border: 1px solid #000;
+  border-radius: 2px;
   font-size: 14px;
-}
-
-/* Input */
-.custom__input {
-  margin: 0;
-  padding: 0;
-}
-
-/* Remove Indicator Separator */
-.custom__indicator-separator {
-  display: none;
-}
-
-/* Dropdown Indicator */
-.custom__dropdown-indicator {
-  padding: 2px;
-  color: #666;
-}
-
-/* Menu */
-.custom__menu {
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 4px;
-}
-
-/* Option */
-.custom__option {
-  padding: 4px 6px;
-  font-size: 14px;
+  background-color: white;
+  color: black;
+  width: 200px; /* Match your input width */
+  appearance: none; /* Remove default arrow */
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 6px center;
+  background-size: 16px;
   cursor: pointer;
 }
 
-.custom__option--is-focused {
-  background-color: #f5f5f5;
-}
-
-.custom__option--is-selected {
-  background-color: #eaeaea;
-  font-weight: 500;
+select.custom-dropdown:focus {
+  outline: none;
+  border-color: #000; /* Same as date input */
 }
