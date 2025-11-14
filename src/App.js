@@ -51,9 +51,7 @@ function App() {
           <div className="indices-wrapper">
             <p className="title">Indices</p>
             <p className="subtitle">
-              "We offer high-tech design and calculation services of a wide
-              range of indices to multiple players in the financial and
-              insurance industry."
+              Empowering financial institutions with tailored index design, cross-asset calculation services, and scalable tech platforms—driven by advanced programming, digital transformation, and custom-built solutions.
             </p>
           </div>
           <Chart />
