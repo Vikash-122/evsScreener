@@ -6,6 +6,16 @@ import IndexSelector from './IndexSelector';
 function Chart() {
 
   const [selectedIndex,setSelectedIndex]=useState("Index 1");
+  
+  const indexDescriptions = {
+    "Index 1": "The Index captures the performance of US companies focused on serving the fastest growing demographic and behavioral segments. The theme can encompass a wide range of areas including demographic segments like Generation Z, aged population etc. and behavioral segments like health conscious and eco-friendly consumers.",
+    "Index 2": "The Index captures the performance of companies across the world focused on AI related theme. The theme covers companies enabling growth in AI industry, providing services like design, development, manufacturing and consulting in sectors such as software, hardware and consulting.",
+    "Index 3": "The Index captures the performance of companies across the world expected to benefit in the shift from fossil fuel powered vehicles to electric vehicles. The theme covers companies such as EV manufacturers, parts suppliers, battery manufacturers and mining/material companies.",
+    "Index 4": "The Index captures the performance of companies across the world focused contributing to sustainable environment and green economy. The theme covers companies in areas like renewable energy, not polluting vehicles, waste management/water recycling, pollution control, sustainable farming etc.",
+    "Index 5": "The Index captures the performance of companies across the world involved in the cybersecurity ecosystem. Companies that provide protection from the key risks of cyber-attacks, data leakage, and fraud. These cover areas such as Virtual private networks (VPNs), Multi-factor authentication (MFA) software, Cybersecurity tools and remediation services post attack."
+  };
+
+
   return (
     <div
       style={{
@@ -45,7 +55,7 @@ function Chart() {
           <IndexSelector selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex}/>
         </h2>
         <p style={{width: "150%"}}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta maxime possimus praesentium aperiam quam suscipit voluptates pariatur at libero perferendis?
+          {indexDescriptions[selectedIndex]}
         </p>
         <br></br>
 
