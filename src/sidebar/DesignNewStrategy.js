@@ -4,7 +4,7 @@ import "./DesignNewStrategy.css";
 
 const options1 = ["Index", "Basket", "TWAPS/VWAPS"];
 const options2 = ["Eq", "Eq Drv", "Rates", "Comm", "Multi Asset"];
-const options3 = ["Replace Existing Strategy", "Create New Strategy",];
+const options3 = ["Replicate Existing Strategy", "Create New Strategy",];
 
 const sections = [
   { title: "Underlying Strategy", component: "UnderlyingStrategy" },
