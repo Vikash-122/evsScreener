@@ -31,6 +31,6 @@ export const allData = [{
 {
     "name": "Design New Strategy",
     "type": "tab",
-    "link": "Reporting and Analytics"
+    "link": "Screener"
 },
 ]

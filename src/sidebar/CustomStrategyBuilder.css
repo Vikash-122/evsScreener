@@ -1,0 +1,96 @@
+.custom-strategy-container {
+  padding: 20px;
+    background-image: linear-gradient(to right, #1e1e2f, #1d7586);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+
+.cust-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* .csb-section {
+  margin-bottom: 30px;
+  width: 80%;
+} */
+
+.row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.csb-card {
+  background-color: #483a3a;
+  opacity: 0.7;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+
+  flex: 1;
+  width: 80%;
+  min-width: 300px;
+}
+
+h4 {
+  margin-bottom: 10px;
+}
+
+.checkbox-group, .radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  accent-color: #ff4d4f;
+}
+
+.create-btn {
+  background-color: #ff4d4f;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.create-btn:hover {
+  background-color: #e04344;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.data-table th, .data-table td {
+  border: 1px solid #444;
+  padding: 8px;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #333;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #444;
+}
+
+.card-header span {
+  font-size: 14px;
+  color: #ff4d4f;
+}
