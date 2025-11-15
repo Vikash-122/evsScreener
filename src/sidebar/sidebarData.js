@@ -4,7 +4,27 @@ export const allData = [{
     "link": "Screener"
 },
 {
-    "name": "Design New Strategy",
+    "name": "General Rules",
+    "type": "tab",
+    "link": "Screener"
+},
+{
+    "name": "Universe Builder",
+    "type": "tab",
+    "link": "Screener"
+},
+{
+    "name": "Custom Strategy Builder",
+    "type": "tab",
+    "link": "Screener"
+},
+{
+    "name": "Backtesting",
+    "type": "tab",
+    "link": "Screener"
+},
+{
+    "name": "Analytics",
     "type": "tab",
     "link": "Screener"
 },

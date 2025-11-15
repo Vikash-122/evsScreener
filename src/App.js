@@ -21,6 +21,11 @@ import DailyCalculations from "./SidebarIndexTools/DailyCalculations";
 import OnboardNewIndex from "./SidebarIndexTools/OnboardNewIndex";
 import Rebalance from "./SidebarIndexTools/Rebalance";
 import EmptyPage from "./sidebar/EmptyPage";
+import GeneralRules from './sidebar/GeneralRules'
+import CustomStrategyBuilder from "./sidebar/CustomStrategyBuilder";
+import Backtesting from "./sidebar/Backtesting";
+import PerfAnalytics from "./sidebar/Analytics";
+
 function App() {
   const [link, setLink] = useState("Home");
   const [page, setPage] = useState("Home");
@@ -64,8 +69,12 @@ function App() {
           <Sidebar page={page} setPage={setPage} setLink={setLink} link={link}/>
 
           {page === "Home" && <Home1 />}
-          {page === "Design New Strategy" && <DesignNewStrategy />}
+          {page === "General Rules" && <GeneralRules/>}
           {page === "Universe Builder" && <UniverseBuilder />}
+          {page === "Custom Strategy Builder" && <CustomStrategyBuilder />}
+          {page === "Backtesting" && <Backtesting />}
+          {page === "Analytics" && <PerfAnalytics />}
+          {page === "Design New Strategy" && <DesignNewStrategy />}
           {page === "EmptyPage" && <EmptyPage/>}
         </div>
       )}
