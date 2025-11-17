@@ -11,6 +11,10 @@ export default function BacktestParameters(){
              <label>To Date:</label>
              <input type="date" />
            </div>
+           <div className="row">
+             <label># Iterations:</label>
+             <input type="text" />
+           </div>
          </div>
     )
 }
