@@ -28,7 +28,7 @@ export default function MediaCoverage({ setLink, setPage }) {
             color: "white",
           }}
         >
-          Media coverage & insights from our experts
+          Design. Analyze. Launch. Operate. Reinventing Index Solutions Through Intelligent Tech
         </p>
       </div>
       <div
