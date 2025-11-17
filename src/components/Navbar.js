@@ -1,14 +1,16 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import logo from "./images/evs_logo.png";
+import {Link, useLocation} from "react-router-dom";
 
-function Navbar({link, setLink}) {
+function Navbar({link}) {
+  const location = useLocation().pathname; 
   return (
     <nav
       className="navbar navbar-expand-lg px-3 blurred"
       style={{
         minHeight: "100px",
-        backgroundColor:`${link === "Home"? "white":"rgba(99, 73, 130, 1)"}`,
+        backgroundColor:`${location === "/"? "white":"rgba(99, 73, 130, 1)"}`,
         position: "sticky",
         top: 0,
         left: 0,
@@ -18,7 +20,8 @@ function Navbar({link, setLink}) {
       >
       <div className="container-fluid">
         {/* Brand on the left */}
-        <a className="navbar-brand d-flex align-items-center" href="#" onClick={() => setLink("Home")}>
+        <Link to ="/" className="link">
+        <a className="navbar-brand d-flex align-items-center" href="#">
           <img
             src={logo}
             alt="Company Logo"
@@ -27,10 +30,11 @@ function Navbar({link, setLink}) {
             className="d-inline-block align-text-top" // spacing between logo & text
             />
           <div id="nav-title">
-            <span className="fw-bold me-2"   style={{color:`${link === "Home"? "black": "white"}`, fontSize: "25px" }} >EVALUESERVE</span>
-            <span style={{color:`${link === "Home"? "black": "white"}`}}>IndexElevate</span>
+            <span className="fw-bold me-2"   style={{color:`${location === "/"? "black": "white"}`, fontSize: "25px" }} >EVALUESERVE</span>
+            <span style={{color:`${location === "/"? "black": "white"}`}}>IndexElevate</span>
           </div>
         </a>
+        </Link>
 
         {/* Toggle button for mobile */}
         <button
