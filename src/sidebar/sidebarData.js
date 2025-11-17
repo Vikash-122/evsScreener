@@ -4,7 +4,32 @@ export const allData = [{
     "link": "Screener"
 },
 {
-    "name": "General Rules",
+    "name": "Design New Strategy",
+    "type": "tab",
+    "link": "Screener"
+},
+{
+    "name": "Strategy Analyzer",
+    "type": "tab",
+    "link": "Screener"
+},
+{
+    "name": "Auto Rulebook",
+    "type": "tab",
+    "link": "Screener"
+},
+{
+    "name": "MARKETING MATERIAL",
+    "type": "label",
+    "link": "Screener"
+},
+{
+    "name": "Factset",
+    "type": "tab",
+    "link": "Screener"
+},
+{
+    "name": "Flyer",
     "type": "tab",
     "link": "Screener"
 },
@@ -25,11 +50,6 @@ export const allData = [{
 },
 {
     "name": "Analytics",
-    "type": "tab",
-    "link": "Screener"
-},
-{
-    "name": "Design New Strategy",
     "type": "tab",
     "link": "Screener"
 },
