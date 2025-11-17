@@ -104,7 +104,7 @@ input[type="text"] {
 
 .schedule-grid {
   display: grid;
-  grid-template-columns: 500px 500px;
+  grid-template-columns: 500px;
   gap: 30px;
 }
 
@@ -144,7 +144,7 @@ label {
   background-color: #fff;
   color: #a855f7;
   font-weight: 500;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
 }
 
 .radio-box input {

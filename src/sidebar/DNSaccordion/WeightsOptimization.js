@@ -10,7 +10,7 @@ export default function WeightsOptimization(){
         {/* Left Column */}
         <div className="form-section">
           <div className="form-row">
-            <label htmlFor="custom-dropdown">Weights</label>
+            <label htmlFor="custom-dropdown">Weights Calculation</label>
             <select
               id="custom-dropdown"
               value={selectedOption}
@@ -29,7 +29,7 @@ export default function WeightsOptimization(){
           </div>
 
           <div className="form-row">
-            <label htmlFor="custom-dropdown">Optimization Tech</label>
+            <label htmlFor="custom-dropdown">Optimization Technique</label>
             <select
               id="custom-dropdown"
               value={selectedOption}
@@ -47,6 +47,20 @@ export default function WeightsOptimization(){
             </select>
           </div>
     </div>
+    </div>
+    <div style={{display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr 1fr", alignItems: "center", gap: "10px", marginTop: "10px"}} >
+      <label>Stock Cap</label>
+      <input type="text" style={{width: "80px"}} />
+      <label>Sector Cap</label>
+      <input type="text" style={{width: "80px"}} />
+      <label>Region Cap</label>
+      <input type="text" style={{width: "80px"}} />
+      <label>Stick Floor</label>
+      <input type="text" style={{width: "80px"}} />
+      <label>Country Cap</label>
+      <input type="text" style={{width: "80px"}} />
+      <label>Buffer Rule</label>
+      <input type="text" style={{width: "80px"}} />
     </div>
     </div>
 );
