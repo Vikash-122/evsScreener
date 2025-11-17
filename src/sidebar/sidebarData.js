@@ -33,24 +33,24 @@ export const allData = [{
     "type": "tab",
     "link": "Screener"
 },
-{
-    "name": "Universe Builder",
-    "type": "tab",
-    "link": "Screener"
-},
-{
-    "name": "Custom Strategy Builder",
-    "type": "tab",
-    "link": "Screener"
-},
-{
-    "name": "Backtesting",
-    "type": "tab",
-    "link": "Screener"
-},
-{
-    "name": "Analytics",
-    "type": "tab",
-    "link": "Screener"
-},
 ]
+// {
+//     "name": "Universe Builder",
+//     "type": "tab",
+//     "link": "Screener"
+// },
+// {
+//     "name": "Custom Strategy Builder",
+//     "type": "tab",
+//     "link": "Screener"
+// },
+// {
+//     "name": "Backtesting",
+//     "type": "tab",
+//     "link": "Screener"
+// },
+// {
+//     "name": "Analytics",
+//     "type": "tab",
+//     "link": "Screener"
+// },

@@ -11,7 +11,6 @@ import Backtesting from "./sidebar/Backtesting";
 import PerfAnalytics from "./sidebar/Analytics";
 
 function App({page, setPage, link}) {
-  console.log("App rendered");
   return (
         <div id="home-root">
           <Sidebar page={page} setPage={setPage}  link={link}/>
