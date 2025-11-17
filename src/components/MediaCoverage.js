@@ -7,7 +7,7 @@ import ai from "./images/AI.png";
 import analytics from "./images/analytics-img.jpg";
 import calc from "./images/calculations.webp";
 
-export default function MediaCoverage({ setLink, setPage }) {
+export default function MediaCoverage({setPage }) {
   return (
     <div className="media-page">
       <div className="empty-page">
@@ -38,7 +38,6 @@ export default function MediaCoverage({ setLink, setPage }) {
         <Cards
           title="Backtesting and Rebalancing"
           image={building}
-          setLink={setLink}
           setPage={setPage}
           link="Screener"
           page="Home"
@@ -46,7 +45,6 @@ export default function MediaCoverage({ setLink, setPage }) {
         <Cards
           title="Index Calculation"
           image={calc}
-          setLink={setLink}
           setPage={setPage}
           link="IndexTools"
           page="Onboard New Index"
@@ -54,18 +52,16 @@ export default function MediaCoverage({ setLink, setPage }) {
         <Cards
           title="Reporting and Analytics"
           image={analytics}
-          setLink={setLink}
           setPage={setPage}
-          link="Reporting and Analytics"
+          link="ReportingAndAnalytics"
           ></Cards>
         <Cards
           title="Portfolio Managment Services"
           image={bar}
-          setLink={setLink}
           setPage={setPage}
-          link="Portfolio Managment Services"
+          link="PortfolioManagmentServices"
           ></Cards>
-        <Cards title="AI Lab" image={ai} setLink={setLink} setPage={setPage} link="AI Lab"></Cards>
+        <Cards title="AI Lab" image={ai} setPage={setPage} link="AILab"></Cards>
       </div>
     </div>
   );

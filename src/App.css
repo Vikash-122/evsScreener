@@ -84,6 +84,11 @@
   flex-direction: row;
 }
 
+.link{
+  text-decoration: none;
+  color: inherit;
+}
+
 .Sidebar {
   width: 220px;
   background-color: #2F4050;
@@ -96,6 +101,7 @@
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
   font-family: Arial, sans-serif;
   height: auto;
+  min-height: 100vh;
 }
 
 .Sidebar-list .row{
