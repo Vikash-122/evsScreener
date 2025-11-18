@@ -35,6 +35,26 @@
   justify-content: center;
   row-gap: 10px;
 }
+
+.param-grid {
+    display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0px;
+}
+.param-grid .row {
+  display: grid;
+  grid-template-columns: 140px 140px 190px 140px;
+  align-items: center;
+  gap: 60px;
+}
+.param-grid .long-1-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
   .backtest-grid {
     display: flex;
   flex-direction: column;
@@ -60,7 +80,7 @@ input[type="text"] {
   font-size: 14px;
   background-color: white;
   color: black;
-  width: 200px;
+  /* width: 200px; */
 }
 .generate-btn {
   text-align: center;
@@ -208,7 +228,7 @@ select.custom-dropdown {
   color: black;
   width: 200px; /* Match your input width */
   appearance: none; /* Remove default arrow */
-  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  /* background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>"); */
   background-repeat: no-repeat;
   background-position: right 6px center;
   background-size: 16px;

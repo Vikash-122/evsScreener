@@ -27,7 +27,7 @@ export default function CustomComponent() {
 
   return (
     <div className="container">
-      <p><h6>Flexible Framework for Building New Strategies </h6> Accelerate your strategy development with a high-performance framework. Design and backtest custom strategies at speed, choose from powerful built-in screens and modules to launch index strategies instantly, or engineer your own with the integrated Python editor for maximum control</p>
+      <h6>Flexible Framework for Building New Strategies </h6><p> Accelerate your strategy development with a high-performance framework. Design and backtest custom strategies at speed, choose from powerful built-in screens and modules to launch index strategies instantly, or engineer your own with the integrated Python editor for maximum control</p>
       <div style={{marginBottom: "20px", border: "2px solid #ddd", padding: "10px", borderRadius: "8px"}}>
       <div className="radio-row">
         <label>Select Strategy Type: </label>
