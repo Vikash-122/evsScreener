@@ -9,6 +9,11 @@ export const allData = [{
     "link": "Screener"
 },
 {
+    "name": "Rebalance",
+    "type": "tab",
+    "link": "Screener"
+},
+{
     "name": "Strategy Analyzer",
     "type": "tab",
     "link": "Screener"
