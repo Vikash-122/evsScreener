@@ -15,7 +15,7 @@ function App({page, setPage, link}) {
         <div id="home-root">
           <Sidebar page={page} setPage={setPage}  link={link}/>
 
-          {page === "Home" && <Home1 />}
+          {page === "Home" && <Home1 setPage={setPage}/>}
           {page === "General Rules" && <GeneralRules/>}
           {page === "Universe Builder" && <UniverseBuilder />}
           {page === "Custom Strategy Builder" && <CustomStrategyBuilder />}

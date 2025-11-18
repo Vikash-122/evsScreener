@@ -21,7 +21,7 @@ function Navbar({link}) {
       <div className="container-fluid">
         {/* Brand on the left */}
         <Link to ="/" className="link">
-        <a className="navbar-brand d-flex align-items-center" href="#">
+        <div className="navbar-brand d-flex align-items-center">
           <img
             src={logo}
             alt="Company Logo"
@@ -31,171 +31,11 @@ function Navbar({link}) {
             />
           <div id="nav-title">
             <span className="fw-bold me-2"   style={{color:`${location === "/"? "black": "white"}`, fontSize: "25px" }} >EVALUESERVE</span>
-            <span style={{color:`${location === "/"? "black": "white"}`}}>IndexElevate</span>
+            <span style={{color:`${location === "/"? "black": "white"}`}}>{`IndexElevate${location ==="/Screener"? " - Backtesting and Rebalancing Framework": ""}`}</span>
           </div>
-        </a>
-        </Link>
-
-        {/* Toggle button for mobile */}
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        {/* Dropdowns aligned right */}
-        <div
-          className="collapse navbar-collapse justify-content-end"
-          id="navbarSupportedContent"
-        >
-          <ul className="navbar-nav mb-2 mb-lg-0">
-            {/* Indices */}
-            <li className="nav-item dropdown mx-3">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                id="indicesDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Indices
-              </a>
-              <ul className="dropdown-menu" aria-labelledby="indicesDropdown">
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Another action
-                  </a>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Something else here
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            {/* About */}
-            <li className="nav-item dropdown mx-3">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                id="aboutDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                About
-              </a>
-              <ul className="dropdown-menu" aria-labelledby="aboutDropdown">
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Another action
-                  </a>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Something else here
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            {/* Governance */}
-            <li className="nav-item dropdown mx-3">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                id="governanceDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Governance
-              </a>
-              <ul
-                className="dropdown-menu"
-                aria-labelledby="governanceDropdown"
-              >
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Another action
-                  </a>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Something else here
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            {/* Qubits */}
-            <li className="nav-item dropdown mx-3">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                id="qubitsDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Qubits
-              </a>
-              <ul className="dropdown-menu" aria-labelledby="qubitsDropdown">
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Another action
-                  </a>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Something else here
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
         </div>
-      </div>
+        </Link>
+          </div>
     </nav>
   );
 }

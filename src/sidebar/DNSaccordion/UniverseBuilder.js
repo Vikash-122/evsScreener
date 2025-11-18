@@ -1,14 +1,11 @@
 import { useState } from "react";
 
-const options1 = ["Index", "Basket", "TWAPS", "VWAPS"];
-const options2 = ["Eq", "Eq Drv", "Rates", "Comm", "Multi Asset", "IOI"];
 const options3 = ["Pre-built Screens", "Custom Universe Builder"];
 const options4 = ["a ", "b ", "c ", "d ", "e ", "f ", "g ", "h "];
 const options = ["Option 1", "Option 2", "Option 3"];
 
 export default function UniverseBuilder() {
-  const [selectedOption1, setSelectedOption1] = useState(options1[0]);
-  const [selectedOption2, setSelectedOption2] = useState(options2[0]);
+
   const [selectedOption3, setSelectedOption3] = useState("");
   const [selectedOption4, setSelectedOption4] = useState("");
     const [selectedOption, setSelectedOption] = useState("");
@@ -21,44 +18,7 @@ export default function UniverseBuilder() {
         marginBottom: "10px",
       }}
     >
-      <div className="radio-row">
-        {options1.map((option) => (
-          <label
-            key={option}
-            className={`radio-box ${
-              selectedOption1 === option ? "active" : ""
-            }`}
-          >
-            <input
-              type="radio"
-              name="option"
-              value={option}
-              checked={selectedOption1 === option}
-              onChange={() => setSelectedOption1(option)}
-            />
-            {option}
-          </label>
-        ))}
-      </div>
-      <div className="radio-row">
-        {options2.map((option) => (
-          <label
-            key={option}
-            className={`radio-box ${
-              selectedOption2 === option ? "active" : ""
-            }`}
-          >
-            <input
-              type="radio"
-              name="option"
-              value={option}
-              checked={selectedOption2 === option}
-              onChange={() => setSelectedOption2(option)}
-            />
-            {option}
-          </label>
-        ))}
-      </div>
+      
       <div className="radio-row">
         {options3.map((option) => (
           <label
