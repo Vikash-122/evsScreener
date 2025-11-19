@@ -28,8 +28,7 @@ export default function MediaCoverage({setPage }) {
             color: "white",
           }}
         >
-          Media coverage & insights from our experts
-        </p>
+Design. Analyze. Launch. Operate. Reinventing Index Solutions Through Intelligent Tech        </p>
       </div>
       <div
         className="d-flex flex-row justify-content-evenly"

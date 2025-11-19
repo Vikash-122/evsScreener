@@ -24,7 +24,7 @@ export default function Home({setPage}) {
           <Card title="Marketing Material" text="Auto-create factsheets, flyers, and decks enriched with AI-driven performance insights" page="" setPage={setPage}></Card>
       </div>
       <div style={{width: "500px", height: "500px", margin: "20px 50px"}}>
-        <h2>Excel-like Table</h2>
+        <h2>Discover What's New</h2>
         <ExcelTable data={sampleData} />
       </div>
     </div>
