@@ -175,8 +175,24 @@
   height: 100%;
 }
 .slide-img{
+  background-image: url("./components/images/investing_facts_cover.jfif");
+  background-size: cover;
   height: 450px;
   width: 100%;
+}
+.slide-text{
+  color: white;
+  align-self: center;
+  padding: 50px;
+}
+.slide-text h3{
+  color: #c77ddd;
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+.slide-text p{
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 .media-page{
   height: auto;

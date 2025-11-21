@@ -1,6 +1,5 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
-import { useState } from "react";
 import Slides from "./components/Slides";
 import Card1 from "./components/Card1";
 import Card2 from "./components/Card2";
@@ -8,8 +7,7 @@ import Card3 from "./components/Card3";
 import MediaCoverage from "./components/MediaCoverage";
 import Chart from "./Chart/Chart";
 
-function App() {
-  const [page, setPage] = useState("Home");
+function App({setPage}) {
   return (
     <div>
       {/* ✅ HOME PAGE */}
