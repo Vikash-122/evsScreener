@@ -44,7 +44,7 @@ export default function UnderlyingInstruments(){
     return(
         <div className="section5">
           <div style={{display: "flex", flexDirection: "row", justifyContent: "end", paddingBottom: "5px"}}>
-           <PopUp title="Data Feed"></PopUp>
+           <PopUp title="Set New Data Feed"></PopUp>
           </div>
          <div style={{ width: "100%" }}>
            <div style={{ width: "100%", height: "auto"}}>

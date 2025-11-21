@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.css";
-
-export default function Cards({ title, image, setLink, setPage, link, page }) {
+import {Link} from "react-router-dom";
+export default function Cards({ title, image, link, page, setPage }) {
   return (
     <div
       style={{
@@ -19,14 +19,15 @@ export default function Cards({ title, image, setLink, setPage, link, page }) {
         style={{
           overflow: "hidden",
           width: "100%",
-          height: "70%",
+          height: "80%",
           objectFit: "cover",
           borderTopLeftRadius: "30px",
           borderTopRightRadius: "30px",
         }}
       />
       <div>
-        <br />
+        
+        <Link to = {link} className="link">
         <p
           style={{
             display: "flex",
@@ -34,10 +35,12 @@ export default function Cards({ title, image, setLink, setPage, link, page }) {
             alignItems: "center",
             justifyContent: "center",
             fontSize: "1.3rem",
+            height:"20%",
+            padding:"8px"
+            
+            
           }}
           onClick={() => {
-            if (link !== undefined) {
-              setLink(link);
               window.scrollTo({ top: 0, behavior: "smooth" })
               if(page === undefined){
                 setPage("EmptyPage");
@@ -46,11 +49,11 @@ export default function Cards({ title, image, setLink, setPage, link, page }) {
                 setPage(page)
               }
             }
-            }
           }
         >
           {title}
         </p>
+        </Link>
       </div>
     </div>
   );

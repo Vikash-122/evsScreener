@@ -2,25 +2,24 @@ import { useState } from "react";
 import AccordionSection from "./AccordionSection";
 import "./DesignNewStrategy.css";
 
-const options1 = ["Index", "Basket", "TWAPS/VWAPS"];
-const options2 = ["Eq", "Eq Drv", "Rates", "Comm", "Multi Asset"];
-const options3 = ["Replicate Existing Strategy", "Create New Strategy",];
-
+// { title: "Underlying Strategy", component: "UnderlyingStrategy" },
+// { title: "Corporate Actions", component: "CorporateActions" },
+// { title: "Underlying Instruments", component: "UnderlyingInstruments" },
 const sections = [
-  { title: "Underlying Strategy", component: "UnderlyingStrategy" },
-  { title: "Corporate Actions", component: "CorporateActions" },
-  { title: "Underlying Instruments", component: "UnderlyingInstruments" },
-  { title: "Parameters", component: "Parameters" },
+  { title: "Universe Builder", component: "UniverseBuilder" },
+  { title: "Strategy Builder", component: "StrategyBuilder" },
+  { title: "Strategy Parameters", component: "Parameters" },
   { title: "Weights Optimization", component: "WeightsOptimization" },
   { title: "Backtest Parameters", component: "BacktestParameters" },
   { title: "Data Sufficiency Check", component: "DataSufficiencyCheck" },
 ];
+const options1 = ["Index", "Basket", "TWAPS", "VWAPS"];
+const options2 = ["Eq", "Eq Drv", "Rates", "Comm", "Multi Asset", "IOI"];
 
 export default function CustomComponent() {
-  const [selectedOption1, setSelectedOption1] = useState(options1[0]);
-  const [selectedOption2, setSelectedOption2] = useState(options2[0]);
-  const [selectedOption3, setSelectedOption3] = useState("");
   const [openSection, setOpenSection] = useState(null);
+  const [selectedOption1, setSelectedOption1] = useState("");
+  const [selectedOption2, setSelectedOption2] = useState("");
   
   const toggleSection = (section) => {
     setOpenSection(openSection === section ? null : section);
@@ -28,39 +27,17 @@ export default function CustomComponent() {
 
   return (
     <div className="container">
-      <div style={{
-        borderRadius: "6px",
-        padding: "25px 25px",
-        paddingTop: "5px",
-        marginBottom: "10px"
-      }}>
-
+      <h6>Flexible Framework for Building New Strategies </h6><p> Accelerate your strategy development with a high-performance framework. Design and backtest custom strategies at speed, choose from powerful built-in screens and modules to launch index strategies instantly, or engineer your own with the integrated Python editor for maximum control</p>
+      <div style={{marginBottom: "20px", border: "2px solid #ddd", padding: "10px", borderRadius: "8px"}}>
       <div className="radio-row">
-        {options3.map((option) => (
-          <label key={option} className={`radio-box ${selectedOption3 === option ? "active" : ""}`}>
-            <input
-              type="radio"
-              name="option"
-              value={option}
-              checked={selectedOption3 === option}
-              onChange={() => setSelectedOption3(option)}
-              />
-            {option}
-          </label>
-        ))}
-      </div>
-      </div>
-      <div style={{
-        border: "1px solid #ddd",
-        borderRadius: "6px",
-        padding: "25px 25px",
-        paddingTop: "5px",
-        marginBottom: "10px"
-      }}>
-
-      <div className="radio-row">
+        <label>Select Strategy Type: </label>
         {options1.map((option) => (
-          <label key={option} className={`radio-box ${selectedOption1 === option ? "active" : ""}`}>
+          <label
+            key={option}
+            className={`radio-box ${
+              selectedOption1 === option ? "active" : ""
+            }`}
+          >
             <input
               type="radio"
               name="option"
@@ -73,21 +50,26 @@ export default function CustomComponent() {
         ))}
       </div>
       <div className="radio-row">
+        <label>Select Asset Class: </label>
         {options2.map((option) => (
-          <label key={option} className={`radio-box ${selectedOption2 === option ? "active" : ""}`}>
+          <label
+          key={option}
+            className={`radio-box ${
+              selectedOption2 === option ? "active" : ""
+            }`}
+          >
             <input
               type="radio"
               name="option"
               value={option}
               checked={selectedOption2 === option}
               onChange={() => setSelectedOption2(option)}
-              />
+            />
             {option}
           </label>
         ))}
       </div>
-      </div>
-
+        </div>
       <div className="accordion">
         {sections.map(({ title, component }) => (
           <AccordionSection
