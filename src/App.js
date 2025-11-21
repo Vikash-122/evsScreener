@@ -16,7 +16,7 @@ function App() {
     <div>
       <Navbar></Navbar>
       <Routes>
-        <Route path = "/" element={<Home />} />
+        <Route path = "/" element={<Home  setPage = {setPage}/>} />
         <Route path = "/Screener" element={<Screener page={page} link="Screener" setPage={setPage} />}/>
         <Route path = "/IndexTools" element={<IndexTools page={page} link="IndexTools" setPage={setPage} />}/>
         <Route path = "/ReportingAndAnalytics" element={<RepotingAndAnalytics page={page} link="ReportingAndAnalytics" setPage={setPage} />}/>
