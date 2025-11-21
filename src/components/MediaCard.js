@@ -19,14 +19,14 @@ export default function Cards({ title, image, link, page, setPage }) {
         style={{
           overflow: "hidden",
           width: "100%",
-          height: "70%",
+          height: "80%",
           objectFit: "cover",
           borderTopLeftRadius: "30px",
           borderTopRightRadius: "30px",
         }}
       />
       <div>
-        <br />
+        
         <Link to = {link} className="link">
         <p
           style={{
@@ -35,6 +35,10 @@ export default function Cards({ title, image, link, page, setPage }) {
             alignItems: "center",
             justifyContent: "center",
             fontSize: "1.3rem",
+            height:"20%",
+            padding:"8px"
+            
+            
           }}
           onClick={() => {
               window.scrollTo({ top: 0, behavior: "smooth" })

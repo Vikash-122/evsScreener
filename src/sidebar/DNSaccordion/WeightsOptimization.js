@@ -2,7 +2,8 @@ import { useState } from "react";
 
 export default function WeightsOptimization(){
   const [selectedOption, setSelectedOption] = useState("");
-  const options = ["Option 1", "Option 2", "Option 3"];
+  const options = ["Equal weight", "FM weight", "Mcap","Factor weighted"];
+  const options2=["Min tracking error","Variance"]
 
   return (
     <div className="schedule-container">
@@ -39,7 +40,7 @@ export default function WeightsOptimization(){
               <option value="" disabled>
                 -- Select an option --
               </option>
-              {options.map((option, index) => (
+              {options2.map((option, index) => (
                 <option key={index} value={option}>
                   {option}
                 </option>

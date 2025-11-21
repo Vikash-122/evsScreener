@@ -5,10 +5,11 @@ export default function Cards({title, text, page, setPage}) {
   return (
     <Card style={{
       width: '480px',
-       height: '150px',
+      height: '150px',
       borderRadius: '20px',
       boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
-      padding: '6px'
+      padding: '6px',
+     
     }}>
       <Card.Body>
         {/* First Bold Title */}
